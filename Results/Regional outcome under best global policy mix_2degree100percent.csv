@@ -1,0 +1,109 @@
+"","Reg","Vari","Scenario","value"
+"1","Southern Asia","PPop_npl_chgrate","Tax",0
+"2","Southern Asia","PPop_ipl_chgrate","Tax",0
+"3","Southern Asia","PPop_Gini_chgrate","Tax",-0.00365738188722731
+"4","Southern Asia","PPop_npl_chgrate","TaxSA",-0.109658798457899
+"5","Southern Asia","PPop_ipl_chgrate","TaxSA",-0.204574123796733
+"6","Southern Asia","PPop_Gini_chgrate","TaxSA",-0.00521496170247759
+"7","Southern Asia","PPop_npl_chgrate","TaxSAGF",-0.199578352874302
+"8","Southern Asia","PPop_ipl_chgrate","TaxSAGF",-0.314604020805492
+"9","Southern Asia","PPop_Gini_chgrate","TaxSAGF",-0.0286524384372675
+"10","Sub-Saharan Africa","PPop_npl_chgrate","Tax",0.00172919124540982
+"11","Sub-Saharan Africa","PPop_ipl_chgrate","Tax",9.25928842079315e-05
+"12","Sub-Saharan Africa","PPop_Gini_chgrate","Tax",-0.00339729099648844
+"13","Sub-Saharan Africa","PPop_npl_chgrate","TaxSA",-0.0377557124713884
+"14","Sub-Saharan Africa","PPop_ipl_chgrate","TaxSA",-0.0423849359931097
+"15","Sub-Saharan Africa","PPop_Gini_chgrate","TaxSA",0.000355833378546944
+"16","Sub-Saharan Africa","PPop_npl_chgrate","TaxSAGF",-0.173798616979616
+"17","Sub-Saharan Africa","PPop_ipl_chgrate","TaxSAGF",-0.204835076454055
+"18","Sub-Saharan Africa","PPop_Gini_chgrate","TaxSAGF",-0.0153426192482976
+"19","Europe","PPop_npl_chgrate","Tax",0.00227023202260601
+"20","Europe","PPop_ipl_chgrate","Tax",0.000185082042131191
+"21","Europe","PPop_Gini_chgrate","Tax",0.00416241416762131
+"22","Europe","PPop_npl_chgrate","TaxSA",-0.102178370959507
+"23","Europe","PPop_ipl_chgrate","TaxSA",-0.15098894993498
+"24","Europe","PPop_Gini_chgrate","TaxSA",-0.00233053422158358
+"25","Europe","PPop_npl_chgrate","TaxSAGF",-0.0130644836269733
+"26","Europe","PPop_ipl_chgrate","TaxSAGF",-0.140149190714576
+"27","Europe","PPop_Gini_chgrate","TaxSAGF",0.00536575640849812
+"28","Middle East","PPop_npl_chgrate","Tax",0
+"29","Middle East","PPop_ipl_chgrate","Tax",0
+"30","Middle East","PPop_Gini_chgrate","Tax",-0.00302693618413452
+"31","Middle East","PPop_npl_chgrate","TaxSA",-0.112169608403412
+"32","Middle East","PPop_ipl_chgrate","TaxSA",-0.117503131285385
+"33","Middle East","PPop_Gini_chgrate","TaxSA",-0.0181305868544478
+"34","Middle East","PPop_npl_chgrate","TaxSAGF",-0.14263341377742
+"35","Middle East","PPop_ipl_chgrate","TaxSAGF",-0.318195810247754
+"36","Middle East","PPop_Gini_chgrate","TaxSAGF",-0.0275748846062945
+"37","Latin America and Caribbean","PPop_npl_chgrate","Tax",0
+"38","Latin America and Caribbean","PPop_ipl_chgrate","Tax",0
+"39","Latin America and Caribbean","PPop_Gini_chgrate","Tax",-0.00263856451431455
+"40","Latin America and Caribbean","PPop_npl_chgrate","TaxSA",-0.0332058106609336
+"41","Latin America and Caribbean","PPop_ipl_chgrate","TaxSA",-0.219736330236426
+"42","Latin America and Caribbean","PPop_Gini_chgrate","TaxSA",-0.00687131179469092
+"43","Latin America and Caribbean","PPop_npl_chgrate","TaxSAGF",-0.035912019900492
+"44","Latin America and Caribbean","PPop_ipl_chgrate","TaxSAGF",-0.287401924767666
+"45","Latin America and Caribbean","PPop_Gini_chgrate","TaxSAGF",-0.0106203741824464
+"46","Eurasia","PPop_npl_chgrate","Tax",0.0573736824357749
+"47","Eurasia","PPop_ipl_chgrate","Tax",0.0171180480846522
+"48","Eurasia","PPop_Gini_chgrate","Tax",-0.000321386302269633
+"49","Eurasia","PPop_npl_chgrate","TaxSA",-0.136836734085427
+"50","Eurasia","PPop_ipl_chgrate","TaxSA",-0.0197147931468967
+"51","Eurasia","PPop_Gini_chgrate","TaxSA",-0.0267135647561663
+"52","Eurasia","PPop_npl_chgrate","TaxSAGF",-0.119456631107056
+"53","Eurasia","PPop_ipl_chgrate","TaxSAGF",-0.0517177687038595
+"54","Eurasia","PPop_Gini_chgrate","TaxSAGF",-0.0351182025231176
+"55","Asia-Pacific Developed","PPop_npl_chgrate","Tax",0
+"56","Asia-Pacific Developed","PPop_ipl_chgrate","Tax",0
+"57","Asia-Pacific Developed","PPop_Gini_chgrate","Tax",-0.000162010142228608
+"58","Asia-Pacific Developed","PPop_npl_chgrate","TaxSA",-0.155038373592177
+"59","Asia-Pacific Developed","PPop_ipl_chgrate","TaxSA",-0.161350319066707
+"60","Asia-Pacific Developed","PPop_Gini_chgrate","TaxSA",-0.00260956230775378
+"61","Asia-Pacific Developed","PPop_npl_chgrate","TaxSAGF",-0.139144928601241
+"62","Asia-Pacific Developed","PPop_ipl_chgrate","TaxSAGF",-0.147066527244023
+"63","Asia-Pacific Developed","PPop_Gini_chgrate","TaxSAGF",0.000320401730114828
+"64","China","PPop_npl_chgrate","Tax",0
+"65","China","PPop_ipl_chgrate","Tax",0
+"66","China","PPop_Gini_chgrate","Tax",-0.00293559640924768
+"67","China","PPop_npl_chgrate","TaxSA",-0.369571393878784
+"68","China","PPop_ipl_chgrate","TaxSA",-0.461454503529576
+"69","China","PPop_Gini_chgrate","TaxSA",-0.0260147729440789
+"70","China","PPop_npl_chgrate","TaxSAGF",-0.369571393878784
+"71","China","PPop_ipl_chgrate","TaxSAGF",-0.536772286560238
+"72","China","PPop_Gini_chgrate","TaxSAGF",-0.0282659920407724
+"73","North Africa","PPop_npl_chgrate","Tax",0
+"74","North Africa","PPop_ipl_chgrate","Tax",0
+"75","North Africa","PPop_Gini_chgrate","Tax",-0.0028030734972978
+"76","North Africa","PPop_npl_chgrate","TaxSA",-0.140864703994958
+"77","North Africa","PPop_ipl_chgrate","TaxSA",-0.242069351742716
+"78","North Africa","PPop_Gini_chgrate","TaxSA",-0.0164566544706057
+"79","North Africa","PPop_npl_chgrate","TaxSAGF",-0.142117741471902
+"80","North Africa","PPop_ipl_chgrate","TaxSAGF",-0.247982790856534
+"81","North Africa","PPop_Gini_chgrate","TaxSAGF",-0.0193577411932012
+"82","East Asia and Developing Pacific","PPop_npl_chgrate","Tax",0
+"83","East Asia and Developing Pacific","PPop_ipl_chgrate","Tax",0
+"84","East Asia and Developing Pacific","PPop_Gini_chgrate","Tax",-0.0041928722611948
+"85","East Asia and Developing Pacific","PPop_npl_chgrate","TaxSA",-0.161462469817124
+"86","East Asia and Developing Pacific","PPop_ipl_chgrate","TaxSA",-0.242486189859243
+"87","East Asia and Developing Pacific","PPop_Gini_chgrate","TaxSA",-0.0110165633559874
+"88","East Asia and Developing Pacific","PPop_npl_chgrate","TaxSAGF",-0.229299634946407
+"89","East Asia and Developing Pacific","PPop_ipl_chgrate","TaxSAGF",-0.374787182799642
+"90","East Asia and Developing Pacific","PPop_Gini_chgrate","TaxSAGF",-0.0169241772264953
+"91","India","PPop_npl_chgrate","Tax",0
+"92","India","PPop_ipl_chgrate","Tax",0
+"93","India","PPop_Gini_chgrate","Tax",-0.0040256058863315
+"94","India","PPop_npl_chgrate","TaxSA",-0.139319862320127
+"95","India","PPop_ipl_chgrate","TaxSA",-0.177654450024526
+"96","India","PPop_Gini_chgrate","TaxSA",-0.0205626835827708
+"97","India","PPop_npl_chgrate","TaxSAGF",-0.269730016577581
+"98","India","PPop_ipl_chgrate","TaxSAGF",-0.333841224571004
+"99","India","PPop_Gini_chgrate","TaxSAGF",-0.038181699448028
+"100","United States","PPop_npl_chgrate","Tax",0
+"101","United States","PPop_ipl_chgrate","Tax",0
+"102","United States","PPop_Gini_chgrate","Tax",-0.00300440925564815
+"103","United States","PPop_npl_chgrate","TaxSA",-0.0864498536019301
+"104","United States","PPop_ipl_chgrate","TaxSA",-0.2067326926709
+"105","United States","PPop_Gini_chgrate","TaxSA",-0.00841712398749739
+"106","United States","PPop_npl_chgrate","TaxSAGF",-0.0864498536019301
+"107","United States","PPop_ipl_chgrate","TaxSAGF",-0.109146498729709
+"108","United States","PPop_Gini_chgrate","TaxSAGF",-0.00591436657206112

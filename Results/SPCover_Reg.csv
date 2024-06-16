@@ -1,0 +1,601 @@
+"","Group","Reg","SPScenario","value"
+"1",1,"Southern Asia","Universal",100
+"2",1,"Sub-Saharan Africa","Universal",100
+"3",1,"Europe","Universal",100
+"4",1,"Middle East","Universal",100
+"5",1,"Latin America and Caribbean","Universal",100
+"6",1,"Eurasia","Universal",100
+"7",1,"Asia-Pacific Developed","Universal",100
+"8",1,"China","Universal",100
+"9",1,"North Africa","Universal",100
+"10",1,"East Asia and Developing Pacific","Universal",100
+"11",1,"India","Universal",100
+"12",1,"United States","Universal",100
+"13",1,"Southern Asia","Cash",28.3670188408847
+"14",1,"Sub-Saharan Africa","Cash",5.37576825538559
+"15",1,"Europe","Cash",31.967859778397
+"16",1,"Middle East","Cash",70.4006871564713
+"17",1,"Latin America and Caribbean","Cash",51.9593249732217
+"18",1,"Eurasia","Cash",27.4940930231738
+"19",1,"Asia-Pacific Developed","Cash",31.557442402295
+"20",1,"China","Cash",23.0344580217537
+"21",1,"North Africa","Cash",10.7284579828809
+"22",1,"East Asia and Developing Pacific","Cash",35.1221225394797
+"23",1,"India","Cash",36.4245538327465
+"24",1,"United States","Cash",74.8284828467682
+"25",1,"Southern Asia","SP_current",44.3887957758355
+"26",1,"Sub-Saharan Africa","SP_current",15.5848472212972
+"27",1,"Europe","SP_current",44.6397924787642
+"28",1,"Middle East","SP_current",74.100212925389
+"29",1,"Latin America and Caribbean","SP_current",66.9012084019812
+"30",1,"Eurasia","SP_current",31.4047428370306
+"31",1,"Asia-Pacific Developed","SP_current",39.0657017793105
+"32",1,"China","SP_current",62.7658354285768
+"33",1,"North Africa","SP_current",53.8004865473157
+"34",1,"East Asia and Developing Pacific","SP_current",48.9278616905259
+"35",1,"India","SP_current",87.2121683197467
+"36",1,"United States","SP_current",74.8284828467682
+"37",1,"Southern Asia","SP_covid",96.4891471997514
+"38",1,"Sub-Saharan Africa","SP_covid",31.960285402979
+"39",1,"Europe","SP_covid",94.5682736884646
+"40",1,"Middle East","SP_covid",87.6111377340736
+"41",1,"Latin America and Caribbean","SP_covid",84.9582557088643
+"42",1,"Eurasia","SP_covid",63.4390296437045
+"43",1,"Asia-Pacific Developed","SP_covid",99.7437696290346
+"44",1,"China","SP_covid",100
+"45",1,"North Africa","SP_covid",98.8520783435768
+"46",1,"East Asia and Developing Pacific","SP_covid",89.3076171354349
+"47",1,"India","SP_covid",99.9027391406981
+"48",1,"United States","SP_covid",100
+"49",1,"Southern Asia","PMT",77.3831164943171
+"50",1,"Sub-Saharan Africa","PMT",80.3644015273816
+"51",1,"Europe","PMT",55.6290150873144
+"52",1,"Middle East","PMT",75.9573579369622
+"53",1,"Latin America and Caribbean","PMT",80.3692559792653
+"54",1,"Eurasia","PMT",55.6266322260824
+"55",1,"Asia-Pacific Developed","PMT",53.8044517955915
+"56",1,"China","PMT",78.7690535299191
+"57",1,"North Africa","PMT",77.9347492494537
+"58",1,"East Asia and Developing Pacific","PMT",75.4209572569922
+"59",1,"India","PMT",78.6293610368138
+"60",1,"United States","PMT",58.0109618431097
+"61",2,"Southern Asia","Universal",100
+"62",2,"Sub-Saharan Africa","Universal",100
+"63",2,"Europe","Universal",100
+"64",2,"Middle East","Universal",100
+"65",2,"Latin America and Caribbean","Universal",100
+"66",2,"Eurasia","Universal",100
+"67",2,"Asia-Pacific Developed","Universal",100
+"68",2,"China","Universal",100
+"69",2,"North Africa","Universal",100
+"70",2,"East Asia and Developing Pacific","Universal",100
+"71",2,"India","Universal",100
+"72",2,"United States","Universal",100
+"73",2,"Southern Asia","Cash",24.5094925462805
+"74",2,"Sub-Saharan Africa","Cash",5.59561441679474
+"75",2,"Europe","Cash",31.6842988242705
+"76",2,"Middle East","Cash",70.6890349165529
+"77",2,"Latin America and Caribbean","Cash",43.6596904123757
+"78",2,"Eurasia","Cash",34.0122254551223
+"79",2,"Asia-Pacific Developed","Cash",22.7211563637755
+"80",2,"China","Cash",19.849263248636
+"81",2,"North Africa","Cash",10.7610500924111
+"82",2,"East Asia and Developing Pacific","Cash",28.4535571867517
+"83",2,"India","Cash",34.2721836615652
+"84",2,"United States","Cash",79.699521073833
+"85",2,"Southern Asia","SP_current",37.2757874663894
+"86",2,"Sub-Saharan Africa","SP_current",17.2675847546239
+"87",2,"Europe","SP_current",41.4692921721542
+"88",2,"Middle East","SP_current",74.9884582094217
+"89",2,"Latin America and Caribbean","SP_current",57.1524757158247
+"90",2,"Eurasia","SP_current",38.4932145126069
+"91",2,"Asia-Pacific Developed","SP_current",43.6781404452668
+"92",2,"China","SP_current",59.5164265487599
+"93",2,"North Africa","SP_current",49.9068530836249
+"94",2,"East Asia and Developing Pacific","SP_current",42.0081828295153
+"95",2,"India","SP_current",87.1383215114027
+"96",2,"United States","SP_current",79.699521073833
+"97",2,"Southern Asia","SP_covid",88.660283534413
+"98",2,"Sub-Saharan Africa","SP_covid",35.2997276996017
+"99",2,"Europe","SP_covid",84.4831577763237
+"100",2,"Middle East","SP_covid",86.8312457019317
+"101",2,"Latin America and Caribbean","SP_covid",74.4738186186803
+"102",2,"Eurasia","SP_covid",64.44969346167
+"103",2,"Asia-Pacific Developed","SP_covid",97.2434981366401
+"104",2,"China","SP_covid",100
+"105",2,"North Africa","SP_covid",98.0906439779121
+"106",2,"East Asia and Developing Pacific","SP_covid",89.89308033776
+"107",2,"India","SP_covid",100
+"108",2,"United States","SP_covid",100
+"109",2,"Southern Asia","PMT",64.3653575870298
+"110",2,"Sub-Saharan Africa","PMT",68.557610963922
+"111",2,"Europe","PMT",51.1201917174355
+"112",2,"Middle East","PMT",62.0217783892774
+"113",2,"Latin America and Caribbean","PMT",75.8088891443136
+"114",2,"Eurasia","PMT",52.2647659538156
+"115",2,"Asia-Pacific Developed","PMT",47.3625834192118
+"116",2,"China","PMT",65.1985850625166
+"117",2,"North Africa","PMT",65.6942788339466
+"118",2,"East Asia and Developing Pacific","PMT",61.5281417834316
+"119",2,"India","PMT",65.2612590524153
+"120",2,"United States","PMT",54.6752835059318
+"121",3,"Southern Asia","Universal",100
+"122",3,"Sub-Saharan Africa","Universal",100
+"123",3,"Europe","Universal",100
+"124",3,"Middle East","Universal",100
+"125",3,"Latin America and Caribbean","Universal",100
+"126",3,"Eurasia","Universal",100
+"127",3,"Asia-Pacific Developed","Universal",100
+"128",3,"China","Universal",100
+"129",3,"North Africa","Universal",100
+"130",3,"East Asia and Developing Pacific","Universal",100
+"131",3,"India","Universal",100
+"132",3,"United States","Universal",100
+"133",3,"Southern Asia","Cash",20.4263924328162
+"134",3,"Sub-Saharan Africa","Cash",6.1221198562929
+"135",3,"Europe","Cash",36.5031873501584
+"136",3,"Middle East","Cash",69.164120983716
+"137",3,"Latin America and Caribbean","Cash",33.951881450172
+"138",3,"Eurasia","Cash",41.309966229366
+"139",3,"Asia-Pacific Developed","Cash",40.2162881402187
+"140",3,"China","Cash",16.6732183055481
+"141",3,"North Africa","Cash",8.96120803153405
+"142",3,"East Asia and Developing Pacific","Cash",23.8473994387669
+"143",3,"India","Cash",32.0513420734706
+"144",3,"United States","Cash",78.0948682012123
+"145",3,"Southern Asia","SP_current",31.7919630299276
+"146",3,"Sub-Saharan Africa","SP_current",19.1832136321364
+"147",3,"Europe","SP_current",47.799374433032
+"148",3,"Middle East","SP_current",75.0988985556618
+"149",3,"Latin America and Caribbean","SP_current",46.8225081190466
+"150",3,"Eurasia","SP_current",46.6522651457584
+"151",3,"Asia-Pacific Developed","SP_current",55.3653647490019
+"152",3,"China","SP_current",56.2763515126004
+"153",3,"North Africa","SP_current",45.4626482450851
+"154",3,"East Asia and Developing Pacific","SP_current",36.0326431030932
+"155",3,"India","SP_current",86.9771713882692
+"156",3,"United States","SP_current",78.0948682012123
+"157",3,"Southern Asia","SP_covid",79.7158638717037
+"158",3,"Sub-Saharan Africa","SP_covid",38.7838975105334
+"159",3,"Europe","SP_covid",81.9353995936512
+"160",3,"Middle East","SP_covid",85.8566950497323
+"161",3,"Latin America and Caribbean","SP_covid",61.2846399885565
+"162",3,"Eurasia","SP_covid",72.8690686595498
+"163",3,"Asia-Pacific Developed","SP_covid",95.2614732975491
+"164",3,"China","SP_covid",100
+"165",3,"North Africa","SP_covid",97.2534808605202
+"166",3,"East Asia and Developing Pacific","SP_covid",89.0675070437342
+"167",3,"India","SP_covid",100
+"168",3,"United States","SP_covid",100
+"169",3,"Southern Asia","PMT",56.2003838178671
+"170",3,"Sub-Saharan Africa","PMT",58.6886438687425
+"171",3,"Europe","PMT",48.568283996836
+"172",3,"Middle East","PMT",52.2365679988089
+"173",3,"Latin America and Caribbean","PMT",64.0758279587689
+"174",3,"Eurasia","PMT",50.1726983956219
+"175",3,"Asia-Pacific Developed","PMT",48.9513803172655
+"176",3,"China","PMT",58.1019850381381
+"177",3,"North Africa","PMT",57.9518120820198
+"178",3,"East Asia and Developing Pacific","PMT",52.4175219166337
+"179",3,"India","PMT",58.0733879225509
+"180",3,"United States","PMT",53.5299913001508
+"181",4,"Southern Asia","Universal",100
+"182",4,"Sub-Saharan Africa","Universal",100
+"183",4,"Europe","Universal",100
+"184",4,"Middle East","Universal",100
+"185",4,"Latin America and Caribbean","Universal",100
+"186",4,"Eurasia","Universal",100
+"187",4,"Asia-Pacific Developed","Universal",100
+"188",4,"China","Universal",100
+"189",4,"North Africa","Universal",100
+"190",4,"East Asia and Developing Pacific","Universal",100
+"191",4,"India","Universal",100
+"192",4,"United States","Universal",100
+"193",4,"Southern Asia","Cash",17.2082967743153
+"194",4,"Sub-Saharan Africa","Cash",6.61600816307308
+"195",4,"Europe","Cash",38.2072162650556
+"196",4,"Middle East","Cash",67.1523637321782
+"197",4,"Latin America and Caribbean","Cash",25.4983001857404
+"198",4,"Eurasia","Cash",46.8619656748179
+"199",4,"Asia-Pacific Developed","Cash",40.0165323727574
+"200",4,"China","Cash",14.1552357709499
+"201",4,"North Africa","Cash",7.5576610872543
+"202",4,"East Asia and Developing Pacific","Cash",21.7296897739906
+"203",4,"India","Cash",29.8199811306129
+"204",4,"United States","Cash",75.0791960327387
+"205",4,"Southern Asia","SP_current",27.7865585452728
+"206",4,"Sub-Saharan Africa","SP_current",20.2093542762457
+"207",4,"Europe","SP_current",54.4265450826254
+"208",4,"Middle East","SP_current",75.274473733056
+"209",4,"Latin America and Caribbean","SP_current",37.6752282604678
+"210",4,"Eurasia","SP_current",53.4423054378216
+"211",4,"Asia-Pacific Developed","SP_current",52.0470904772251
+"212",4,"China","SP_current",51.7378767526358
+"213",4,"North Africa","SP_current",42.1289712112445
+"214",4,"East Asia and Developing Pacific","SP_current",32.4551129006369
+"215",4,"India","SP_current",86.3154961494676
+"216",4,"United States","SP_current",75.0791960327387
+"217",4,"Southern Asia","SP_covid",71.6970932542182
+"218",4,"Sub-Saharan Africa","SP_covid",40.4007520792244
+"219",4,"Europe","SP_covid",83.7562834360937
+"220",4,"Middle East","SP_covid",85.7209067706382
+"221",4,"Latin America and Caribbean","SP_covid",49.4908053033432
+"222",4,"Eurasia","SP_covid",81.2263380046374
+"223",4,"Asia-Pacific Developed","SP_covid",97.5195561615235
+"224",4,"China","SP_covid",100
+"225",4,"North Africa","SP_covid",96.6906567706335
+"226",4,"East Asia and Developing Pacific","SP_covid",88.003571875681
+"227",4,"India","SP_covid",100
+"228",4,"United States","SP_covid",100
+"229",4,"Southern Asia","PMT",48.3207700377849
+"230",4,"Sub-Saharan Africa","PMT",50.7955801207429
+"231",4,"Europe","PMT",47.1677987347705
+"232",4,"Middle East","PMT",44.564792418364
+"233",4,"Latin America and Caribbean","PMT",55.1805403869938
+"234",4,"Eurasia","PMT",48.023206716808
+"235",4,"Asia-Pacific Developed","PMT",50.3392091084135
+"236",4,"China","PMT",49.1625583640867
+"237",4,"North Africa","PMT",49.6004720888386
+"238",4,"East Asia and Developing Pacific","PMT",45.7144040215362
+"239",4,"India","PMT",49.0937625083158
+"240",4,"United States","PMT",50.58674119135
+"241",5,"Southern Asia","Universal",100
+"242",5,"Sub-Saharan Africa","Universal",100
+"243",5,"Europe","Universal",100
+"244",5,"Middle East","Universal",100
+"245",5,"Latin America and Caribbean","Universal",100
+"246",5,"Eurasia","Universal",100
+"247",5,"Asia-Pacific Developed","Universal",100
+"248",5,"China","Universal",100
+"249",5,"North Africa","Universal",100
+"250",5,"East Asia and Developing Pacific","Universal",100
+"251",5,"India","Universal",100
+"252",5,"United States","Universal",100
+"253",5,"Southern Asia","Cash",13.9005386874949
+"254",5,"Sub-Saharan Africa","Cash",6.81603558924422
+"255",5,"Europe","Cash",35.2538636323478
+"256",5,"Middle East","Cash",63.6110755973506
+"257",5,"Latin America and Caribbean","Cash",19.7428422005714
+"258",5,"Eurasia","Cash",48.4461238650885
+"259",5,"Asia-Pacific Developed","Cash",33.6416836075325
+"260",5,"China","Cash",12.3656499055978
+"261",5,"North Africa","Cash",7.30400573803007
+"262",5,"East Asia and Developing Pacific","Cash",20.1642770377728
+"263",5,"India","Cash",27.603878419833
+"264",5,"United States","Cash",72.4726299078129
+"265",5,"Southern Asia","SP_current",23.5092719723957
+"266",5,"Sub-Saharan Africa","SP_current",20.4303639860373
+"267",5,"Europe","SP_current",58.2910706112933
+"268",5,"Middle East","SP_current",75.0282357753283
+"269",5,"Latin America and Caribbean","SP_current",31.3086523029927
+"270",5,"Eurasia","SP_current",56.3066961084084
+"271",5,"Asia-Pacific Developed","SP_current",44.6714712535596
+"272",5,"China","SP_current",45.5319951297171
+"273",5,"North Africa","SP_current",40.4009883081345
+"274",5,"East Asia and Developing Pacific","SP_current",29.3477610717267
+"275",5,"India","SP_current",85.1059904485524
+"276",5,"United States","SP_current",72.4726299078129
+"277",5,"Southern Asia","SP_covid",63.8618507587699
+"278",5,"Sub-Saharan Africa","SP_covid",40.5724357149578
+"279",5,"Europe","SP_covid",87.222609557938
+"280",5,"Middle East","SP_covid",85.1546939307558
+"281",5,"Latin America and Caribbean","SP_covid",41.3019925721753
+"282",5,"Eurasia","SP_covid",86.1333064473808
+"283",5,"Asia-Pacific Developed","SP_covid",97.8894051963008
+"284",5,"China","SP_covid",100
+"285",5,"North Africa","SP_covid",96.5705397353431
+"286",5,"East Asia and Developing Pacific","SP_covid",79.3629909499677
+"287",5,"India","SP_covid",100
+"288",5,"United States","SP_covid",100
+"289",5,"Southern Asia","PMT",41.0334067692826
+"290",5,"Sub-Saharan Africa","PMT",42.347379275516
+"291",5,"Europe","PMT",46.0817047960107
+"292",5,"Middle East","PMT",37.3719933906502
+"293",5,"Latin America and Caribbean","PMT",44.223553350002
+"294",5,"Eurasia","PMT",47.2634248955164
+"295",5,"Asia-Pacific Developed","PMT",49.8663365651315
+"296",5,"China","PMT",42.687890802409
+"297",5,"North Africa","PMT",42.577265772954
+"298",5,"East Asia and Developing Pacific","PMT",40.0383054629333
+"299",5,"India","PMT",42.6759038881376
+"300",5,"United States","PMT",47.3703984682095
+"301",6,"Southern Asia","Universal",100
+"302",6,"Sub-Saharan Africa","Universal",100
+"303",6,"Europe","Universal",100
+"304",6,"Middle East","Universal",100
+"305",6,"Latin America and Caribbean","Universal",100
+"306",6,"Eurasia","Universal",100
+"307",6,"Asia-Pacific Developed","Universal",100
+"308",6,"China","Universal",100
+"309",6,"North Africa","Universal",100
+"310",6,"East Asia and Developing Pacific","Universal",100
+"311",6,"India","Universal",100
+"312",6,"United States","Universal",100
+"313",6,"Southern Asia","Cash",12.4691761940191
+"314",6,"Sub-Saharan Africa","Cash",6.46671181840405
+"315",6,"Europe","Cash",29.2529825125479
+"316",6,"Middle East","Cash",57.8821601980396
+"317",6,"Latin America and Caribbean","Cash",14.3697312213177
+"318",6,"Eurasia","Cash",47.7463980897795
+"319",6,"Asia-Pacific Developed","Cash",27.3440634589303
+"320",6,"China","Cash",10.1977052172841
+"321",6,"North Africa","Cash",6.96328212186418
+"322",6,"East Asia and Developing Pacific","Cash",19.7536217581922
+"323",6,"India","Cash",24.6266010643464
+"324",6,"United States","Cash",69.715263099089
+"325",6,"Southern Asia","SP_current",22.0901272738038
+"326",6,"Sub-Saharan Africa","SP_current",19.5857638277891
+"327",6,"Europe","SP_current",58.7662992230527
+"328",6,"Middle East","SP_current",73.9647611355442
+"329",6,"Latin America and Caribbean","SP_current",25.131470006183
+"330",6,"Eurasia","SP_current",56.2812088144601
+"331",6,"Asia-Pacific Developed","SP_current",41.427139744598
+"332",6,"China","SP_current",40.0428632088811
+"333",6,"North Africa","SP_current",39.1728008968651
+"334",6,"East Asia and Developing Pacific","SP_current",27.5059581065504
+"335",6,"India","SP_current",83.3550413668524
+"336",6,"United States","SP_current",70.0590089198432
+"337",6,"Southern Asia","SP_covid",60.2565890097323
+"338",6,"Sub-Saharan Africa","SP_covid",38.3173081919404
+"339",6,"Europe","SP_covid",91.0513172223797
+"340",6,"Middle East","SP_covid",84.4454619010477
+"341",6,"Latin America and Caribbean","SP_covid",33.2459661201255
+"342",6,"Eurasia","SP_covid",89.5410323105808
+"343",6,"Asia-Pacific Developed","SP_covid",100
+"344",6,"China","SP_covid",100
+"345",6,"North Africa","SP_covid",96.3567614426067
+"346",6,"East Asia and Developing Pacific","SP_covid",68.1085094476083
+"347",6,"India","SP_covid",100
+"348",6,"United States","SP_covid",100
+"349",6,"Southern Asia","PMT",34.920257790572
+"350",6,"Sub-Saharan Africa","PMT",35.014694438353
+"351",6,"Europe","PMT",45.1821551818491
+"352",6,"Middle East","PMT",34.4621520713288
+"353",6,"Latin America and Caribbean","PMT",34.9115580242805
+"354",6,"Eurasia","PMT",44.7979048542604
+"355",6,"Asia-Pacific Developed","PMT",46.9781719836383
+"356",6,"China","PMT",34.0416853682437
+"357",6,"North Africa","PMT",34.1228227942688
+"358",6,"East Asia and Developing Pacific","PMT",36.0586725460469
+"359",6,"India","PMT",34.1147286383196
+"360",6,"United States","PMT",47.2823626833442
+"361",7,"Southern Asia","Universal",100
+"362",7,"Sub-Saharan Africa","Universal",100
+"363",7,"Europe","Universal",100
+"364",7,"Middle East","Universal",100
+"365",7,"Latin America and Caribbean","Universal",100
+"366",7,"Eurasia","Universal",100
+"367",7,"Asia-Pacific Developed","Universal",100
+"368",7,"China","Universal",100
+"369",7,"North Africa","Universal",100
+"370",7,"East Asia and Developing Pacific","Universal",100
+"371",7,"India","Universal",100
+"372",7,"United States","Universal",100
+"373",7,"Southern Asia","Cash",11.9664583703658
+"374",7,"Sub-Saharan Africa","Cash",6.53925755699889
+"375",7,"Europe","Cash",22.4573307483014
+"376",7,"Middle East","Cash",48.8210337350193
+"377",7,"Latin America and Caribbean","Cash",10.5669043606186
+"378",7,"Eurasia","Cash",45.4279208721862
+"379",7,"Asia-Pacific Developed","Cash",23.470744672938
+"380",7,"China","Cash",7.52176451695627
+"381",7,"North Africa","Cash",6.44942363904109
+"382",7,"East Asia and Developing Pacific","Cash",21.9120082315377
+"383",7,"India","Cash",20.7470914109171
+"384",7,"United States","Cash",64.9287332932688
+"385",7,"Southern Asia","SP_current",19.1027985364144
+"386",7,"Sub-Saharan Africa","SP_current",18.7825469741468
+"387",7,"Europe","SP_current",56.8849831287593
+"388",7,"Middle East","SP_current",71.6041674124445
+"389",7,"Latin America and Caribbean","SP_current",20.3914267616678
+"390",7,"Eurasia","SP_current",54.5519058134204
+"391",7,"Asia-Pacific Developed","SP_current",40.5768888170268
+"392",7,"China","SP_current",35.3408218750108
+"393",7,"North Africa","SP_current",38.2247130355262
+"394",7,"East Asia and Developing Pacific","SP_current",28.4822720161263
+"395",7,"India","SP_current",80.966404979439
+"396",7,"United States","SP_current",65.612250205157
+"397",7,"Southern Asia","SP_covid",53.4687680636894
+"398",7,"Sub-Saharan Africa","SP_covid",35.8705981913852
+"399",7,"Europe","SP_covid",93.8286488988261
+"400",7,"Middle East","SP_covid",83.8468544590678
+"401",7,"Latin America and Caribbean","SP_covid",27.1700140452044
+"402",7,"Eurasia","SP_covid",91.9827768567608
+"403",7,"Asia-Pacific Developed","SP_covid",99.9593358792312
+"404",7,"China","SP_covid",100
+"405",7,"North Africa","SP_covid",95.9553819143711
+"406",7,"East Asia and Developing Pacific","SP_covid",58.2357088770542
+"407",7,"India","SP_covid",100
+"408",7,"United States","SP_covid",100
+"409",7,"Southern Asia","PMT",30.5226003760212
+"410",7,"Sub-Saharan Africa","PMT",27.6081499376806
+"411",7,"Europe","PMT",43.7799981525459
+"412",7,"Middle East","PMT",31.803302877506
+"413",7,"Latin America and Caribbean","PMT",27.6226593271162
+"414",7,"Eurasia","PMT",43.7012059244835
+"415",7,"Asia-Pacific Developed","PMT",45.2108886511914
+"416",7,"China","PMT",28.615599121779
+"417",7,"North Africa","PMT",28.5532526508429
+"418",7,"East Asia and Developing Pacific","PMT",32.2289561043124
+"419",7,"India","PMT",28.629980957887
+"420",7,"United States","PMT",41.9740439224607
+"421",8,"Southern Asia","Universal",100
+"422",8,"Sub-Saharan Africa","Universal",100
+"423",8,"Europe","Universal",100
+"424",8,"Middle East","Universal",100
+"425",8,"Latin America and Caribbean","Universal",100
+"426",8,"Eurasia","Universal",100
+"427",8,"Asia-Pacific Developed","Universal",100
+"428",8,"China","Universal",100
+"429",8,"North Africa","Universal",100
+"430",8,"East Asia and Developing Pacific","Universal",100
+"431",8,"India","Universal",100
+"432",8,"United States","Universal",100
+"433",8,"Southern Asia","Cash",7.92744497357369
+"434",8,"Sub-Saharan Africa","Cash",6.59367620691547
+"435",8,"Europe","Cash",16.5910207028899
+"436",8,"Middle East","Cash",38.178027780232
+"437",8,"Latin America and Caribbean","Cash",7.05514427896752
+"438",8,"Eurasia","Cash",42.5414819973491
+"439",8,"Asia-Pacific Developed","Cash",20.9389949565063
+"440",8,"China","Cash",5.54694476030383
+"441",8,"North Africa","Cash",5.6177543396877
+"442",8,"East Asia and Developing Pacific","Cash",24.0616142314193
+"443",8,"India","Cash",16.7477257812348
+"444",8,"United States","Cash",59.5462259200815
+"445",8,"Southern Asia","SP_current",14.9933090735044
+"446",8,"Sub-Saharan Africa","SP_current",17.7630236328413
+"447",8,"Europe","SP_current",56.0961433229908
+"448",8,"Middle East","SP_current",68.3700068820142
+"449",8,"Latin America and Caribbean","SP_current",15.2733796109845
+"450",8,"Eurasia","SP_current",52.0557329449718
+"451",8,"Asia-Pacific Developed","SP_current",37.5784507807966
+"452",8,"China","SP_current",31.86936762833
+"453",8,"North Africa","SP_current",34.3343571560238
+"454",8,"East Asia and Developing Pacific","SP_current",29.8120592194669
+"455",8,"India","SP_current",76.0619365306141
+"456",8,"United States","SP_current",60.7171398012521
+"457",8,"Southern Asia","SP_covid",47.2509638837461
+"458",8,"Sub-Saharan Africa","SP_covid",32.8987877584922
+"459",8,"Europe","SP_covid",95.4645835317427
+"460",8,"Middle East","SP_covid",83.4159438659793
+"461",8,"Latin America and Caribbean","SP_covid",20.4634482846707
+"462",8,"Eurasia","SP_covid",93.4663012410582
+"463",8,"Asia-Pacific Developed","SP_covid",92.550273282578
+"464",8,"China","SP_covid",100
+"465",8,"North Africa","SP_covid",94.2466636375049
+"466",8,"East Asia and Developing Pacific","SP_covid",50.7707968579894
+"467",8,"India","SP_covid",100
+"468",8,"United States","SP_covid",100
+"469",8,"Southern Asia","PMT",24.6097727296594
+"470",8,"Sub-Saharan Africa","PMT",20.4122314631782
+"471",8,"Europe","PMT",40.2430795995431
+"472",8,"Middle East","PMT",29.0692066454601
+"473",8,"Latin America and Caribbean","PMT",21.1921375614472
+"474",8,"Eurasia","PMT",39.222636198805
+"475",8,"Asia-Pacific Developed","PMT",38.8995447948745
+"476",8,"China","PMT",22.7780472576118
+"477",8,"North Africa","PMT",22.7166096447311
+"478",8,"East Asia and Developing Pacific","PMT",27.2264344090031
+"479",8,"India","PMT",22.7976418335167
+"480",8,"United States","PMT",35.7016581675561
+"481",9,"Southern Asia","Universal",100
+"482",9,"Sub-Saharan Africa","Universal",100
+"483",9,"Europe","Universal",100
+"484",9,"Middle East","Universal",100
+"485",9,"Latin America and Caribbean","Universal",100
+"486",9,"Eurasia","Universal",100
+"487",9,"Asia-Pacific Developed","Universal",100
+"488",9,"China","Universal",100
+"489",9,"North Africa","Universal",100
+"490",9,"East Asia and Developing Pacific","Universal",100
+"491",9,"India","Universal",100
+"492",9,"United States","Universal",100
+"493",9,"Southern Asia","Cash",7.55271778570569
+"494",9,"Sub-Saharan Africa","Cash",7.22801423983437
+"495",9,"Europe","Cash",12.7111935680937
+"496",9,"Middle East","Cash",29.3366084916268
+"497",9,"Latin America and Caribbean","Cash",4.37871266632476
+"498",9,"Eurasia","Cash",37.6427663348273
+"499",9,"Asia-Pacific Developed","Cash",20.7336991698889
+"500",9,"China","Cash",4.37212592365509
+"501",9,"North Africa","Cash",4.49470008970288
+"502",9,"East Asia and Developing Pacific","Cash",24.4296444511344
+"503",9,"India","Cash",12.5218012190592
+"504",9,"United States","Cash",49.209337088633
+"505",9,"Southern Asia","SP_current",15.6230221469204
+"506",9,"Sub-Saharan Africa","SP_current",17.6442994822539
+"507",9,"Europe","SP_current",51.8221757697831
+"508",9,"Middle East","SP_current",63.8753894882838
+"509",9,"Latin America and Caribbean","SP_current",10.3128511146434
+"510",9,"Eurasia","SP_current",47.3619400565705
+"511",9,"Asia-Pacific Developed","SP_current",35.9610029893727
+"512",9,"China","SP_current",29.796166173289
+"513",9,"North Africa","SP_current",27.3654583698328
+"514",9,"East Asia and Developing Pacific","SP_current",30.4752234625084
+"515",9,"India","SP_current",68.0606790016725
+"516",9,"United States","SP_current",50.3159083897949
+"517",9,"Southern Asia","SP_covid",46.1236979840073
+"518",9,"Sub-Saharan Africa","SP_covid",31.1309459583821
+"519",9,"Europe","SP_covid",96.3652657728053
+"520",9,"Middle East","SP_covid",83.1647962082416
+"521",9,"Latin America and Caribbean","SP_covid",13.8623789470841
+"522",9,"Eurasia","SP_covid",94.5063342196299
+"523",9,"Asia-Pacific Developed","SP_covid",79.5379889774121
+"524",9,"China","SP_covid",100
+"525",9,"North Africa","SP_covid",89.0884104371314
+"526",9,"East Asia and Developing Pacific","SP_covid",49.2925122343833
+"527",9,"India","SP_covid",100
+"528",9,"United States","SP_covid",100
+"529",9,"Southern Asia","PMT",22.6949592170091
+"530",9,"Sub-Saharan Africa","PMT",13.6793874200173
+"531",9,"Europe","PMT",32.3165517711689
+"532",9,"Middle East","PMT",24.0298420915301
+"533",9,"Latin America and Caribbean","PMT",12.991447402213
+"534",9,"Eurasia","PMT",30.2909178055405
+"535",9,"Asia-Pacific Developed","PMT",28.7477854858362
+"536",9,"China","PMT",16.0592871950881
+"537",9,"North Africa","PMT",16.1266091631157
+"538",9,"East Asia and Developing Pacific","PMT",21.0269196059676
+"539",9,"India","PMT",16.054191841331
+"540",9,"United States","PMT",24.9713088793361
+"541",10,"Southern Asia","Universal",100
+"542",10,"Sub-Saharan Africa","Universal",100
+"543",10,"Europe","Universal",100
+"544",10,"Middle East","Universal",100
+"545",10,"Latin America and Caribbean","Universal",100
+"546",10,"Eurasia","Universal",100
+"547",10,"Asia-Pacific Developed","Universal",100
+"548",10,"China","Universal",100
+"549",10,"North Africa","Universal",100
+"550",10,"East Asia and Developing Pacific","Universal",100
+"551",10,"India","Universal",100
+"552",10,"United States","Universal",100
+"553",10,"Southern Asia","Cash",6.50732432820341
+"554",10,"Sub-Saharan Africa","Cash",8.70804603939089
+"555",10,"Europe","Cash",7.8299466257382
+"556",10,"Middle East","Cash",19.7976313931689
+"557",10,"Latin America and Caribbean","Cash",1.97675735371773
+"558",10,"Eurasia","Cash",30.957989789732
+"559",10,"Asia-Pacific Developed","Cash",28.2832217538709
+"560",10,"China","Cash",3.20676587234058
+"561",10,"North Africa","Cash",3.34040099865794
+"562",10,"East Asia and Developing Pacific","Cash",21.7459290306921
+"563",10,"India","Cash",8.32453465167639
+"564",10,"United States","Cash",43.5828363118527
+"565",10,"Southern Asia","SP_current",11.6446214843245
+"566",10,"Sub-Saharan Africa","SP_current",21.3787725134592
+"567",10,"Europe","SP_current",44.7335904748749
+"568",10,"Middle East","SP_current",53.0743453166082
+"569",10,"Latin America and Caribbean","SP_current",5.96823339008885
+"570",10,"Eurasia","SP_current",40.7321649709605
+"571",10,"Asia-Pacific Developed","SP_current",43.6617387423798
+"572",10,"China","SP_current",27.7395500456702
+"573",10,"North Africa","SP_current",20.031192989827
+"574",10,"East Asia and Developing Pacific","SP_current",28.4174994752631
+"575",10,"India","SP_current",60.0708820398503
+"576",10,"United States","SP_current",44.8787734343475
+"577",10,"Southern Asia","SP_covid",38.4749755926764
+"578",10,"Sub-Saharan Africa","SP_covid",39.8306651565887
+"579",10,"Europe","SP_covid",94.3023227918793
+"580",10,"Middle East","SP_covid",82.8252829625945
+"581",10,"Latin America and Caribbean","SP_covid",8.11585166979786
+"582",10,"Eurasia","SP_covid",95.5111844997857
+"583",10,"Asia-Pacific Developed","SP_covid",70.2555989585359
+"584",10,"China","SP_covid",100
+"585",10,"North Africa","SP_covid",80.5323283547626
+"586",10,"East Asia and Developing Pacific","SP_covid",60.3180502959465
+"587",10,"India","SP_covid",100
+"588",10,"United States","SP_covid",100
+"589",10,"Southern Asia","PMT",18.0415463017516
+"590",10,"Sub-Saharan Africa","PMT",6.643610003859
+"591",10,"Europe","PMT",15.156604024651
+"592",10,"Middle East","PMT",14.1276380643619
+"593",10,"Latin America and Caribbean","PMT",4.75192461629844
+"594",10,"Eurasia","PMT",13.8626841501146
+"595",10,"Asia-Pacific Developed","PMT",15.1317666685132
+"596",10,"China","PMT",9.43652213989778
+"597",10,"North Africa","PMT",9.62078828635311
+"598",10,"East Asia and Developing Pacific","PMT",13.1185578203958
+"599",10,"India","PMT",9.4378890474496
+"600",10,"United States","PMT",11.150606940259
