@@ -11,9 +11,4 @@ Xiangjie and Daniele contributed equally to this research.
 
 Corresponding authors: K.F. (kfeng@umd.edu), K.H. (k.hubacek@rug.nl).
 
-
 The code folder includes all codes used for modelling, analysis, and visualization in the paper.
-
-The "Results summary.Rdata" includes all data used for the figures shown in the main text.
-
-The global SAM table based on GTAP-v11, the detailed World Bank Global Consumption Database (WBGCD), the coverage of social assistance in each country is not publicly available unless one gets the license. If interested, please contact the corresponding authors.
