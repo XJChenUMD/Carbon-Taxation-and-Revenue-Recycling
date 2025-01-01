@@ -4,9 +4,9 @@
 
 
 
-Recy <- c(0.3,0.8,1)
-Recynam <- c("30percent","80percent","100percent")
-z=1#for 100percent
+Recy <- c(0.2, 0.3,0.8,1)
+Recynam <- c("20percent","30percent","80percent","100percent")
+z=2#for 30percent
 
 load(str_c(pathout5,"/Results summary",Recynam[z],".Rdata"))
 
@@ -14,11 +14,11 @@ order.tax <- c("Universal_P","CBDR_P","Universal_C","CBDR_C","Luxury","Luxury&CB
 order.taxname <- c("(T1) Global uniform\nproduction tax","(T2) Nation-differentiated\nproduction tax",
                    "(T3) Global uniform\nconsumption tax","(T4) Nation-differentiated\nconsumption tax",
                    "(T5) Luxury\nconsumption tax","(T6) Luxury & nation-\ndifferentiated consumption tax")
-order.sp <- c("Null","Cash","SP_current","SP_covid","Universal","PMT")
+order.sp <- c("Null","Cash","SP_current","SP_covid","Universal","PerfectTargeted")
 order.spname <- c("No revenue\nrecycling",
                   "(S1) Cash-based programs", "(S2) Current social\nassistance",
                   "(S3) Social assistance\nCOVID-19 expansion","(S4) Universal dividend"
-                  ,"(S5) Proxy Means\nTest (PMT)")
+                  ,"(S5) Perfectly Targeted")
 
 
 #Figure: Uneven burden by deciles under different tax scenarios.
@@ -44,8 +44,8 @@ Fig.1a <- GlobalOutcome_dome  %>% filter(Goal %in% "1.5degree") %>%
   mutate(Vari = factor(Vari, levels = c("IPLchg","NPLchg"))) %>% 
   ggplot()+
   facet_wrap(.~Vari,nrow = 1, 
-             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 750 million)",
-                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1445 million)")))+
+             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 718 million)",
+                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1442 million)")))+
   geom_tile(aes(SP, Tax, fill = PovertyRateLabel))+
   geom_label(aes(SP, Tax, 
                  label= str_c(format(round(PovertyRateLabel,2),nsmall =2),"%")),
@@ -57,9 +57,9 @@ Fig.1a <- GlobalOutcome_dome  %>% filter(Goal %in% "1.5degree") %>%
                        high=brewer.pal(3,"Dark2")[2],
                        mid = "gray88", low=brewer.pal(4,"Dark2")[3],
                        midpoint = 0,
-                       limits = c(-17.5,16),
-                       breaks = seq(-15,15,10),
-                       labels = str_c(seq(-15,15,10),"%"))+
+                       limits = c(-33,16),
+                       breaks = seq(-30,15,10),
+                       labels = str_c(seq(-30,15,10),"%"))+
   theme_test(base_line_size = 1,base_size = 12)+
   theme(legend.position = "top",legend.title = element_text(size = 12,face = "bold"),
         legend.text = element_text(size = 12),legend.background = element_blank(),
@@ -85,8 +85,8 @@ Fig.1b <- GlobalOutcome_dome  %>% filter(Goal %in% "1.5degree") %>%
                        high=brewer.pal(3,"Dark2")[2],
                        mid = "gray88", low=brewer.pal(4,"Dark2")[3],
                        midpoint = 0,
-                       limits = c(-4.1,2.1),
-                       breaks = seq(-4,2,2),labels = str_c(seq(-4,2,2),"%"))+
+                       limits = c(-10.1,2.1),
+                       breaks = seq(-10,2,2),labels = str_c(seq(-10,2,2),"%"))+
   theme_test(base_line_size = 1,base_size = 12)+
   theme(legend.position = "top",legend.title = element_text(size = 12,face = "bold"),
         legend.text = element_text(size = 12),legend.background = element_blank(),
@@ -137,7 +137,7 @@ order.spname2 <- c("No revenue recycling",
                    "(S3) Social assistance\nCOVID-19 expansion")
 
 Fig.T2 <-Data_AllTaxLevel %>% filter(TaxLevel %in% seq(0,180,15)) %>% 
-  filter(SP != "PMT") %>% filter(SP != "Universal") %>%
+  filter(SP != "PerfectTargeted") %>% filter(SP != "Universal") %>%
   filter(Tax != "Null") %>% pivot_wider(id_cols = c(Tax,TaxLevel,SP),names_from = Vari) %>% 
   ggplot()+
   geom_vline(xintercept = CO2_Response_Recy[7,1,1],color = "black",linetype = "dashed",linewidth = 1,alpha = 0.6)+
@@ -214,10 +214,10 @@ ggsave(str_c(pathout5,"/", "Global CO2 and poverty outcome by tax level",Recynam
 
 #Figure: International policy mix
 #================
-order.sp3 <- c("SP_covid","Universal","PMT")
+order.sp3 <- c("SP_covid","Universal","PerfectTargeted")
 order.spname3 <- c("(T5) Luxury consumption tax +\n(S3) Social assistance\nCOVID-19 expansion",
                    "(T5) Luxury consumption tax +\n(S4) Universal dividend"
-                   ,"(T5) Luxury consumption tax +\n(S5) Proxy Means Test (PMT)")
+                   ,"(T5) Luxury consumption tax +\n(S5) Perfectly Targeted")
 
 order.gf <- c("His.PoverPop","His.Pop","His.PoverGap",
               "Curren.PoverPop","Curren.Pop","Curren.PoverGap")
@@ -234,8 +234,8 @@ Fig.1a <- GlobalOutcome_GloRec %>% filter(Goal %in% "2.0degree") %>%
   mutate(Vari = factor(Vari, levels = c("IPLchg","NPLchg"))) %>% 
   ggplot()+
   facet_wrap(.~Vari,nrow = 1, 
-             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 750 million)",
-                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1445 million)")))+
+             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 718 million)",
+                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1442 million)")))+
   geom_tile(aes(SP, GF, fill = PovertyRateLabel))+
   geom_label(aes(SP, GF, 
                  label= str_c(format(round(PovertyRateLabel,2),nsmall =2),"%")),
@@ -289,8 +289,8 @@ ggdraw()+
   draw_plot(Fig.1b, x=0, y=0, height = .49)+
   draw_plot_label(label = c("a)", "b)"), size = 15, 
                   x=c(0, 0), y=c(1, 0.5))
-ggsave(str_c(pathout5,"/", "Luxury_SA+GF outcome_2degree",Recynam[z],".jpg"),
-       width = 8.5,height = 9,dpi = 500)
+# ggsave(str_c(pathout5,"/", "Luxury_SA+GF outcome_2degree",Recynam[z],".jpg"),
+#        width = 8.5,height = 9,dpi = 500)
 #------------
 
 #---------1.5 degree----------
@@ -299,8 +299,8 @@ Fig.1a <- GlobalOutcome_GloRec %>% filter(Goal %in% "1.5degree") %>%
   mutate(Vari = factor(Vari, levels = c("IPLchg","NPLchg"))) %>% 
   ggplot()+
   facet_wrap(.~Vari,nrow = 1, 
-             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 750 million)",
-                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1445 million)")))+
+             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 718 million)",
+                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1442 million)")))+
   geom_tile(aes(SP, GF, fill = PovertyRateLabel))+
   geom_label(aes(SP, GF, 
                  label= str_c(format(round(PovertyRateLabel,2),nsmall =2),"%")),
@@ -355,8 +355,8 @@ ggdraw()+
   draw_plot(Fig.1b, x=0, y=0, height = .49)+
   draw_plot_label(label = c("a)", "b)"), size = 15, 
                   x=c(0, 0), y=c(1, 0.5))
-ggsave(str_c(pathout5,"/", "Luxury_SA+GF outcome_15degree",Recynam[z],".jpg"),
-       width = 8.5,height = 9,dpi = 500)
+# ggsave(str_c(pathout5,"/", "Luxury_SA+GF outcome_15degree",Recynam[z],".jpg"),
+#        width = 8.5,height = 9,dpi = 500)
 #------------
 
 # required tax level------------
@@ -378,8 +378,8 @@ GlobalOutcome_GloRec  %>%
   theme(axis.text.x = element_text(angle = -325, vjust = 1,hjust=1),
         strip.text = element_text(face = "bold"),
         axis.title = element_text(size = 14,face = "bold"))
-ggsave(str_c(pathout5,"/", "Luxury_SA+GF required tax level",Recynam[z],".jpg"),
-       width = 8.5,height = 5,dpi = 500)
+# ggsave(str_c(pathout5,"/", "Luxury_SA+GF required tax level",Recynam[z],".jpg"),
+#        width = 8.5,height = 5,dpi = 500)
 #================
 
 
@@ -418,14 +418,14 @@ Fig.1a <- Reg_Outcome_20_Figdata %>%
                      breaks = unique(Reg_Outcome_20_Figdata$Scenario)[-1],
                      values = brewer.pal(3,"Dark2"),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   scale_shape_manual(name = "",
                      breaks = unique(Reg_Outcome_20_Figdata$Scenario)[-1],
                      values = c(15:17),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   theme(legend.text = element_text(size = 8),legend.key.height = unit(10,"pt"),
         axis.text.x = element_text(angle = 90, vjust = .5,hjust=1),
         axis.title = element_text(size = 14,face = "bold"))+
@@ -447,14 +447,14 @@ Fig.1b  <- Reg_Outcome_20_Figdata %>%
                      breaks = unique(Reg_Outcome_20_Figdata$Scenario)[-1],
                      values = c(brewer.pal(3,"Dark2")),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   scale_shape_manual(name = "",
                      breaks = unique(Reg_Outcome_20_Figdata$Scenario)[-1],
                      values = c(15:17),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   theme(legend.text = element_text(size = 8),legend.key.height = unit(10,"pt"),
         axis.text.x = element_text(angle = 90, vjust = .5,hjust=1),
         axis.title = element_text(size = 14,face = "bold"))+
@@ -484,14 +484,14 @@ Fig.1a <- Reg_Outcome_15_Figdata %>%
                      breaks = unique(Reg_Outcome_15_Figdata$Scenario)[-1],
                      values = brewer.pal(3,"Dark2"),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   scale_shape_manual(name = "",
                      breaks = unique(Reg_Outcome_15_Figdata$Scenario)[-1],
                      values = c(15:17),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   theme(legend.text = element_text(size = 8),legend.key.height = unit(10,"pt"),
         axis.text.x = element_text(angle = 90, vjust = .5,hjust=1),
         axis.title = element_text(size = 14,face = "bold"))+
@@ -513,14 +513,14 @@ Fig.1b  <- Reg_Outcome_15_Figdata %>%
                      breaks = unique(Reg_Outcome_15_Figdata$Scenario)[-1],
                      values = c(brewer.pal(3,"Dark2")),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   scale_shape_manual(name = "",
                      breaks = unique(Reg_Outcome_15_Figdata$Scenario)[-1],
                      values = c(15:17),
                      labels = c("(T5) Luxury consumption tax without recycling",
-                                "(T5+S4) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
-                                "(T5+S4+G4) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: current emissions & Poverty headcount"))+
+                                "(T5+S3) Luxury consumption tax+\nSocial assistance COVID-19 expansion",
+                                "(T5+S3+G3) Luxury consumption tax+\nSocial assistance COVID-19 expansion+\nGlobal fund: historical emissions & poverty gap"))+
   theme(legend.text = element_text(size = 8),legend.key.height = unit(10,"pt"),
         axis.text.x = element_text(angle = 90, vjust = .5,hjust=1),
         axis.title = element_text(size = 14,face = "bold"))+

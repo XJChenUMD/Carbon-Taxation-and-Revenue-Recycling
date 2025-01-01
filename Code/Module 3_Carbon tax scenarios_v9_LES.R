@@ -86,6 +86,7 @@ INT2[is.infinite(INT2)] <- 0
 
 Tax_Level <- c(0:180)#US$/ton
 # Tax_Level <- seq(0,180,15)#US$/ton
+# Tax_Level <- c(0,8:15,30,45,60,65:170,180)#US$/ton
 Tax_level_nam <- str_c("L",Tax_Level)
 
 #define output variable

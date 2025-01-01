@@ -3,7 +3,7 @@
 #xjchen@terpmail.umd.edu
 
 #Choose two ideal TAX+SA combination from Module 5 based on the extreme poverty effect.
-#One for actual; one for ideal (based on PMT)
+#One for actual; one for ideal (based on PerfectTargeted)
 
 load(str_c(pathout,"/Expenditure,Footprint,Pop,Emission.Rdata"))
 load(str_c(pathout,"/Social assistance scenarios.Rdata"))
@@ -29,7 +29,7 @@ load(str_c(pathout4,"/Global poverty under TAX+SA+GF scenarios100percent.Rdata")
 
 TarTaxScen <- which(dimnames(Tax_Scenarios)[[3]] %in% "Luxury")
 TarRecyScen <- which(dimnames(SP_Scenarios)[[3]] %in% "SP_covid")
-TarGlobRecy <- which(dimnames(ClimateFund)[[2]] %in%  "His.PoverPop")
+TarGlobRecy <- which(dimnames(ClimateFund)[[2]] %in%  "His.PoverGap")
 TarTaxLevel <- which(Tax_Level %in% RequireTax15_Glo[2,TarGlobRecy])
 
 Global_Fund <- seq(0,1000,1)

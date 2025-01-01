@@ -62,7 +62,7 @@ Reg_WBCD <- Reg_WBCD[!is.na(Reg_WBCD)]
 Con_200group$ctry <- rep(Reg_WBCD, each = 201)
 
 Reg_corr_Full <- openxlsx::read.xlsx (str_c(pathdata4,
-                                           "/Reg match table_GTAP_WBCD_WBGDP_GTAP11b160reg_v7.xlsx"),
+                                           "/Reg match table_GTAP_WBCD_WBGDP_GTAP11b160reg_v9.xlsx"),
                                      sheet = 1)
 Reg_corr <- Reg_corr_Full[which(Reg_corr_Full$Included %in% "Y"),]
 Reg_Inclu <- Reg_corr$WBGDPcode
