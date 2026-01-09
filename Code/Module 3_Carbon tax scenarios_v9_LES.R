@@ -21,6 +21,8 @@
 # Yearly decrement for 1.5 goal :4847 Mt;  for 2 goal: 890 Mt
 
 
+#New calculation on Nov. 21, 2025; Set low-ambition and high-ambition scenarios. 
+
 #Load the data from the results in Module 2
 load(str_c(pathout,"/Expenditure,Footprint,Pop,Emission.Rdata"))
 regnam <- toupper(regnam)
@@ -84,7 +86,7 @@ INT2[is.infinite(INT2)] <- 0
 #---------
 
 
-Tax_Level <- c(0:180)#US$/ton
+Tax_Level <- c(0:100)#US$/ton
 # Tax_Level <- seq(0,180,15)#US$/ton
 # Tax_Level <- c(0,8:15,30,45,60,65:170,180)#US$/ton
 Tax_level_nam <- str_c("L",Tax_Level)
@@ -465,11 +467,11 @@ for (k in 1:length(Tax_Level)) {
 
 #Identify the required tax level
 #-------------
-Tar15 <- CO2_Response[7,1]*0.853#1.5 degree goal
+Tar15 <- CO2_Response[7,1]*0.92#High ambition
 CO2_Effect15 <- CO2_Response-Tar15
 TarLevel15 <- as.numeric(substr(colnames(CO2_Effect15)[apply(abs(CO2_Effect15), 1, which.min)],2,3))
 
-Tar20 <- CO2_Response[7,1]*0.973#2 degree goal
+Tar20 <- CO2_Response[7,1]*0.96#Low ambition
 CO2_Effect20 <- CO2_Response-Tar20
 TarLevel20 <- as.numeric(substr(colnames(CO2_Effect20)[apply(abs(CO2_Effect20), 1, which.min)],2,3))
 #------------

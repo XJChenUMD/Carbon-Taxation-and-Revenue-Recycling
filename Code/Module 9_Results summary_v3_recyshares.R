@@ -84,7 +84,7 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   
   #Figure: Uneven burden by deciles under different tax scenarios.
   #===========================
-  #Use 60 $/ton show the carbon burden by decile
+  #Use 50 $/ton show the carbon burden by decile
   DEC_name <- c("G10","G20","G30","G40","G50","G60","G70","G80","G90","G100")
   DEC_num <- seq(0.1,1,0.1)
   
@@ -105,7 +105,7 @@ for (z in 1:length(Recy)) {#loop for various recycling share
                                dimnames = list(DEC_name,c("Lab","Cap","Tax"),Reg_Inclu))
   
   for (i in 1:(dim(Tax_Scenarios)[3]-1)) {
-    load(str_c(pathout3,"/L",60,"-",
+    load(str_c(pathout3,"/L",50,"-",
                dimnames(Tax_Scenarios)[[3]][i],"-",
                dimnames(SP_Scenarios)[[3]][1],Recynam[z],".Rdata"))
     
@@ -192,7 +192,7 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   Income_cost_perCap_decile_agg <- Carbon_cost_decile_agg
   
   for (i in 1:(dim(Tax_Scenarios)[3]-1)) {
-    load(str_c(pathout3,"/L",60,"-",
+    load(str_c(pathout3,"/L",50,"-",
                dimnames(Tax_Scenarios)[[3]][i],"-",
                dimnames(SP_Scenarios)[[3]][1],Recynam[z],".Rdata"))
     
@@ -272,20 +272,20 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   #Figure: Social protection rate
   #================
   Cover_decile_agg <- array(NA,dim = c(length(DEC_name),length(Reg),dim(SP_Scenarios)[3]+2),
-                            dimnames = list(DEC_name,Reg,c(dimnames(SP_Scenarios)[[3]],"PerfectTargeted60","PerfectTargeted90")))
+                            dimnames = list(DEC_name,Reg,c(dimnames(SP_Scenarios)[[3]],"PerfectTargeted20","PerfectTargeted50")))
   
   for (i in 1:(dim(SP_Scenarios)[3]+2)){
     if(i <=5){
       Pop_tar <- Population*SP_Scenarios[,,i]
     }
     if (i == 6) {
-      Pop_tar <- Population*read.csv(str_c(pathout3,"/Poverty focused Coverage rate--L30-Universal_P-",Recynam[z],".csv"),row.names = 1)
+      Pop_tar <- Population*read.csv(str_c(pathout3,"/Poverty focused Coverage rate--L10-Universal_P-",Recynam[z],".csv"),row.names = 1)
     }
     if (i == 7) {
-      Pop_tar <- Population*read.csv(str_c(pathout3,"/Poverty focused Coverage rate--L60-Universal_P-",Recynam[z],".csv"),row.names = 1)
+      Pop_tar <- Population*read.csv(str_c(pathout3,"/Poverty focused Coverage rate--L20-Universal_P-",Recynam[z],".csv"),row.names = 1)
     }
     if (i == 8) {
-      Pop_tar <- Population*read.csv(str_c(pathout3,"/Poverty focused Coverage rate--L90-Universal_P-",Recynam[z],".csv"),row.names = 1)
+      Pop_tar <- Population*read.csv(str_c(pathout3,"/Poverty focused Coverage rate--L50-Universal_P-",Recynam[z],".csv"),row.names = 1)
     }
     
     
@@ -321,8 +321,8 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   #================
   Best_Tax <- "Luxury"  
   Best_SA <- "SP_covid"
-  Best_GF20 <- "His.PoverGap"
-  Best_GF15 <- "His.PoverGap"
+  Best_GF20 <- "His.PoverPop"
+  Best_GF15 <- "His.PoverPop"
   
   Reg_Outcome_20 <- array(0,dim = c(length(Reg),10,4),
                           dimnames = list(Reg,
@@ -508,11 +508,11 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   #Figure: National level domestic best recycling policy
   #================
   X_IPL <- OUT_TAXSP[,which(dimnames(OUT_TAXSP)[[2]] %in% "PR_ipl_tax"),
-                     which(dimnames(OUT_TAXSP)[[3]] %in% "Luxury"),which(Tax_Level %in% 60),
+                     which(dimnames(OUT_TAXSP)[[3]] %in% "Luxury"),which(Tax_Level %in% 50),
                      which(dimnames(OUT_TAXSP)[[5]]%in% c("Cash","SP_current","SP_covid"))]
   
   
-  write.csv(X_IPL,str_c(pathout5,"/","National best policy mix_raw results_luxury 60",Recynam[z],".csv"),row.names = F)
+  write.csv(X_IPL,str_c(pathout5,"/","National best policy mix_raw results_luxury 50",Recynam[z],".csv"),row.names = F)
   
   Nation_BestRecy <- as.data.frame(array(NA,dim = c(length(Reg_Inclu),2)))
   colnames(Nation_BestRecy) <- c("Country","BestRec")
@@ -521,15 +521,15 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   #================
   
   
-  #Figure: Tax level by nation and sectors (also elas), tax revenue and gdp; 60$/ton
+  #Figure: Tax level by nation and sectors (also elas), tax revenue and gdp; 50$/ton
   #================
   #Tax level-CBDR pro-based/con-based-------
   CBDR <- as.data.frame(array(NA, dim=c(length(Reg),3)))
   colnames(CBDR) <- c("Region","Tax_C","Tax_P")
   CBDR[,1] <- unique(Reg_corr$region_class_new)
-  CBDR[,2] <- rowsum(Tax_reg_C[,which(Tax_Level %in% 60)]*colSums(Emission_CB),Reg_corr$region_class_new,reorder = F)/
+  CBDR[,2] <- rowsum(Tax_reg_C[,which(Tax_Level %in% 50)]*colSums(Emission_CB),Reg_corr$region_class_new,reorder = F)/
     rowsum(colSums(Emission_CB),Reg_corr$region_class_new,reorder = F)
-  CBDR[,3] <- rowsum(Tax_reg_P[,which(Tax_Level %in% 60)]*colSums(Emission_PB),Reg_corr$region_class_new,reorder = F)/
+  CBDR[,3] <- rowsum(Tax_reg_P[,which(Tax_Level %in% 50)]*colSums(Emission_PB),Reg_corr$region_class_new,reorder = F)/
     rowsum(colSums(Emission_PB),Reg_corr$region_class_new,reorder = F)
   
   #Tax level-Luxury (sectoral difference)---------
@@ -537,18 +537,18 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   colnames(Luxury) <- c("Secnam","Elas","TaxRate")
   Luxury[,1] <- secnam
   Luxury[,2] <- rowMeans(Elasticity_raw)
-  Luxury[,3] <- rowMeans(Tax_Scenarios[,,3,which(Tax_Level %in% 60)])
-  Country_sec_level_lux <- Tax_Scenarios[,,3,which(Tax_Level %in% 60)]
+  Luxury[,3] <- rowMeans(Tax_Scenarios[,,3,which(Tax_Level %in% 50)])
+  Country_sec_level_lux <- Tax_Scenarios[,,3,which(Tax_Level %in% 50)]
   write.csv(Country_sec_level_lux,
-            str_c(pathout5,"/", "Country_sector_level_lux_60.csv"))
+            str_c(pathout5,"/", "Country_sector_level_lux_50.csv"))
   
   #Tax revenue-amount--------
-  Revenue <- rowsum(Tax_revenue[,1:7,which(Tax_Level %in% 60)],Reg_corr$region_class_new,reorder = F)#million
+  Revenue <- rowsum(Tax_revenue[,1:7,which(Tax_Level %in% 50)],Reg_corr$region_class_new,reorder = F)#million
   Revenue <- as.data.frame(Revenue[,1:6])
   
   #Tax revenue-share of GDP
-  RevenuetoGDP <- rowsum(Tax_revenue[,1:7,which(Tax_Level %in% 60)],Reg_corr$region_class_new,reorder = F)/
-    pracma::repmat(rowsum(Tax_revenue[,8,which(Tax_Level %in% 60)],Reg_corr$region_class_new,reorder = F),1,7)
+  RevenuetoGDP <- rowsum(Tax_revenue[,1:7,which(Tax_Level %in% 50)],Reg_corr$region_class_new,reorder = F)/
+    pracma::repmat(rowsum(Tax_revenue[,8,which(Tax_Level %in% 50)],Reg_corr$region_class_new,reorder = F),1,7)
   
   Revenue$Reg <- rownames(Revenue)
   Revenue %>% pivot_longer(-Reg,
@@ -564,9 +564,9 @@ for (z in 1:length(Recy)) {#loop for various recycling share
   RevenueAnalysis <- rbind(X,Y)
   rm(X,Y);gc()
   
-  Revenue_nation <- Tax_revenue[,1:7,which(Tax_Level %in% 60)]
+  Revenue_nation <- Tax_revenue[,1:7,which(Tax_Level %in% 50)]
   write.csv(Revenue_nation,
-            str_c(pathout5,"/", "Revenue_nation_60.csv"))
+            str_c(pathout5,"/", "Revenue_nation_50.csv"))
   #================
   
   #Figure: Global recycling scenarios
@@ -664,7 +664,7 @@ for (z in 1:length(Recy)) {#loop for various recycling share
        Transfer_Str_Decile,VA_Tot_Chg,
        GlobalOutcome_dome,#Global poverty, ineq outcome under domestic policy mix, by climate goal (1.5 or 2.0)
        GlobalOutcome_GloRec,#Global poverty, ineq outcome under global policy mix, by climate goal (1.5 or 2.0)
-       Data_Unevenburden, Data_Unevenburden_agg,#Uneven burden across decile at region/country level, for 60$/ton
+       Data_Unevenburden, Data_Unevenburden_agg,#Uneven burden across decile at region/country level, for 50$/ton
        CBDR,RevenueAnalysis,Luxury,
        OUT_TAXSP,OUT_TAXSP_GF,#raw full results by country, scenarios, tax level
        CO2_Response_Recy,CO2_Response_GloRecy,#CO2 response by tax level

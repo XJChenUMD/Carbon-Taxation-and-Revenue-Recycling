@@ -38,61 +38,65 @@ Reg_ldc <- c("Sub-Saharan Africa","North Africa","China","India", "Latin America
 
 #Figure: Tax level required for climate goals; Poverty, ineq outcome under domestic policy mix
 #================
+nature_theme_heat <- theme_minimal(base_size=10,base_family="Helvetica")+
+  theme(panel.grid=element_blank(),
+        strip.background=element_blank(),
+        strip.text=element_text(face="bold",size=9,lineheight=1.05),
+        strip.clip="off",                        # 长标题不要裁剪
+        axis.title=element_text(face="bold",size=12),
+        axis.text=element_text(size=9),
+        legend.position="top",
+        legend.title=element_text(size=11,face="bold"),
+        legend.text=element_text(size=9),
+        legend.background=element_blank(),
+        legend.key.width=unit(30,"pt"),
+        legend.key.height=unit(8,"pt"),
+        panel.spacing.y=unit(1,"lines"),
+        plot.margin=margin(t=5.5,r=5.5,b=5.5,l=30))
+
 # 1.5 degree------------
 Fig.1a  <- GlobalOutcome_dome  %>% filter(Goal %in% "1.5degree") %>% 
   filter(Vari %in% c("NPLchg","IPLchg")) %>% 
   mutate(Vari = factor(Vari, levels = c("IPLchg","NPLchg"))) %>% 
   ggplot()+
-  facet_wrap(.~Vari,nrow = 1, 
-             labeller = as_labeller(c(IPLchg = "Extreme (international) poverty line\n(baseline poverty headcount: 718 million)",
-                                      NPLchg = "National poverty lines\n(baseline poverty headcount: 1442 million)")))+
-  geom_tile(aes(SP, Tax, fill = PovertyRateLabel))+
-  geom_label(aes(SP, Tax, 
-                 label= str_c(format(round(PovertyRateLabel,2),nsmall =2),"%")),
-             size = 2.7, fontface= "bold")+
-  labs(y = "Tax scenarios", x = "Domestic revenue recycling scenarios")+
-  scale_x_discrete(limit = order.sp,labels = order.spname)+
-  scale_y_discrete(limit = rev(order.tax),labels = rev(order.taxname))+
-  scale_fill_gradient2(name="Changes in poverty headcount under a carbon tax with\n80% revenue recycled aligned with the 1.5 °C goal(%)", 
-                       high=brewer.pal(3,"Dark2")[2],
-                       mid = "gray88", low=brewer.pal(4,"Dark2")[3],
+  facet_wrap(.~Vari,nrow=1,
+             labeller=as_labeller(c(IPLchg="Extreme (international) poverty\n(baseline poverty headcount: 718 million)",
+                                    NPLchg="National poverty\n(baseline poverty headcount: 1442 million)")))+
+  geom_tile(aes(SP,Tax,fill=PovertyRateLabel))+
+  geom_label(aes(SP,Tax,label=str_c(format(round(PovertyRateLabel,2),nsmall=2),"%")),
+             size=2.5,fontface="plain")+         
+  labs(y="Tax scenarios",x="Domestic revenue recycling scenarios")+
+  scale_x_discrete(limits=order.sp,labels=order.spname)+
+  scale_y_discrete(limits=rev(order.tax),labels=rev(order.taxname))+
+  scale_fill_gradient2(name="Changes in poverty headcount(%),\nhigh-ambition carbon tax with 80% revenue recycled",
+                       high="#CC79A7",mid="white",low="#15616d",
                        midpoint = 0,
-                       limits = c(-53,15),
-                       breaks = seq(-50,15,15),
-                       labels = str_c(seq(-50,15,15),"%"))+
-  theme_test(base_line_size = 1,base_size = 12)+
-  theme(legend.position = "top",legend.title = element_text(size = 12,face = "bold"),
-        legend.text = element_text(size = 12),legend.background = element_blank(),
-        legend.key.height = unit(10,"pt"),legend.key.width = unit(25,"pt"),
-        axis.text.x = element_text(angle = -325, vjust = 1,hjust=1),
-        axis.title = element_text(size = 14,face = "bold"))
+                       limits = c(-42,12),
+                       breaks = seq(-40,10,10),
+                       labels = str_c(seq(-40,10,10),"%"))+
+  nature_theme_heat+
+  theme(axis.text.x = element_text(angle = -325, vjust = 1,hjust=1))
 
 Fig.1b  <- GlobalOutcome_dome  %>% filter(Goal %in% "1.5degree") %>% 
   filter(Vari %in% c("LocalGiniChg","InterGiniChg")) %>% 
   mutate(Vari = factor(Vari, levels = c("LocalGiniChg","InterGiniChg"))) %>% 
   ggplot()+
-  facet_wrap(.~Vari,nrow = 1, 
-             labeller = as_labeller(c(LocalGiniChg = "Inequality within countries", 
-                                      InterGiniChg = "Inequality between countries")))+
-  geom_tile(aes(SP, Tax, fill = value*100))+
-  geom_label(aes(SP, Tax, 
-                 label= str_c(format(round(value*100,2), nsmall= 2),"%")),
-             size = 2.7, fontface= "bold")+
-  labs(y = "Tax scenarios", x = "Domestic revenue recycling scenarios")+
-  scale_x_discrete(limit = order.sp,labels = order.spname)+
-  scale_y_discrete(limit = rev(order.tax),labels = rev(order.taxname))+
-  scale_fill_gradient2(name="Changes in Gini coefficient under a carbon tax with\n80% revenue recycled aligned with the 1.5 °C goal(%)", 
-                       high=brewer.pal(3,"Dark2")[2],
-                       mid = "gray88", low=brewer.pal(4,"Dark2")[3],
+  facet_wrap(.~Vari,nrow=1,
+             labeller=as_labeller(c(LocalGiniChg="Inequality within countries",
+                                    InterGiniChg="Inequality between countries")))+
+  geom_tile(aes(SP,Tax,fill=value*100))+
+  geom_label(aes(SP,Tax,label=str_c(format(round(value*100,2),nsmall=2),"%")),
+             size=2.5,fontface="plain")+       
+  labs(y="Tax scenarios",x="Domestic revenue recycling scenarios")+
+  scale_x_discrete(limits=order.sp,labels=order.spname)+
+  scale_y_discrete(limits=rev(order.tax),labels=rev(order.taxname))+
+  scale_fill_gradient2(name="Changes in Gini coefficient(%),\nhigh-ambition carbon tax with 80% revenue recycled",
+                       high="#CC79A7",mid="white",low="#15616d",
                        midpoint = 0,
-                       limits = c(-23,2.1),
-                       breaks = seq(-22,2,6),labels = str_c(seq(-22,2,6),"%"))+
-  theme_test(base_line_size = 1,base_size = 12)+
-  theme(legend.position = "top",legend.title = element_text(size = 12,face = "bold"),
-        legend.text = element_text(size = 12),legend.background = element_blank(),
-        legend.key.height = unit(10,"pt"),legend.key.width = unit(25,"pt"),
-        axis.text.x = element_text(angle = -325, vjust = 1,hjust=1),
-        axis.title = element_text(size = 14,face = "bold"))
+                       limits = c(-12,1.1),
+                       breaks = seq(-10,2,2),labels = str_c(seq(-10,2,2),"%"))+
+  nature_theme_heat+
+  theme(axis.text.x = element_text(angle = -325, vjust = 1,hjust=1))
 
 ggdraw()+ 
   draw_plot(Fig.1a, x=0, y=0.5, height = .49)+
