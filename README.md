@@ -9,6 +9,6 @@ Xiangjie Chen 1, Daniele Malerba 2,  Kuishuang Feng 3, Yannick Oswald 4, Laixian
 
 Xiangjie and Daniele contributed equally to this research. 
 
-Corresponding authors: K.F. (kfeng@hku.hk), K.H. (k.hubacek@rug.nl).
+Corresponding authors: K.F. (kfeng@hku.hk), L.S. (lsun123@umd.edu).
 
 The code folder contains all the code used for modelling, analysis, and visualisation in the paper.
