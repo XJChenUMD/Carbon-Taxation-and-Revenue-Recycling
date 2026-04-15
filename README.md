@@ -1,6 +1,6 @@
 # Carbon-Taxation-and-Revenue-Recycling
 
-This project provides the code and results used in the research paper: "A global just transition through carbon taxation and revenue recycling"
+This project provides the code and results used in the research paper: "Aligning climate mitigation with poverty and inequality alleviation goals via carbon revenue redistribution"
 
 Author list:
 Xiangjie Chen 1, Daniele Malerba 2,  Kuishuang Feng 3, Yannick Oswald 4, Laixiang Sun 1, Klaus Hubacek 5 
